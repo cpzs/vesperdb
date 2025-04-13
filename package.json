@@ -1,0 +1,49 @@
+{
+  "name": "vesperdb",
+  "version": "1.0.5",
+  "description": "A simple and easy to use SQL query builder for Node.js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:pg": "jest tests/unit/dialects/pg",
+    "test:mysql": "jest tests/unit/dialects/mysql",
+    "test:sqlite": "jest tests/unit/dialects/sqlite",
+    "test:mssql": "jest tests/unit/dialects/mssql",
+    "example": "node examples/basic.js"
+  },
+  "keywords": [
+    "sql",
+    "query",
+    "builder",
+    "database",
+    "postgresql",
+    "mysql",
+    "sqlite",
+    "mssql",
+    "oracle",
+    "orm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.3",
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.1.7",
+    "better-sqlite3": "^9.4.3",
+    "mssql": "^10.0.2",
+    "oracledb": "^6.3.0",
+    "lru-cache": "^7.14.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cpzs/vesperdb.git"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
